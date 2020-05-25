@@ -9,6 +9,8 @@
     <style>
       .message { font-size: 1.3em; font-weight: bold; }
       label { font-size: 12px; }
+      .red { border-color: red; }
+      .green { border-color: green; }
     </style>
   </head>
 <body ng-app="LunchCheck">
@@ -17,7 +19,7 @@
          <div class="form-group" >
              <input id="lunch-menu" type="text"
              placeholder="list comma separated dishes you usually have for lunch"
-             class="form-control"
+             class="form-control {{msgColor}}"
              ng-model="items">
          </div>
          <!-- <div> -->
